@@ -111,9 +111,10 @@ a:hover{
 }
 
 .projects{
+    position: static;
     display:grid;
     grid-template-columns: 1.75fr 1.25fr;
-    max-height: 50%;
+    max-height: 100%;
 
 }
 
@@ -201,4 +202,68 @@ a:hover{
     background-image: none;
     background-color: black;
     color: white;
+}
+
+.skills{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
+}
+
+#skills_title{
+    font-size: 3em;
+    font-size:7vw;
+    margin-bottom: 2vw;
+    margin-top: 4vw;
+    text-align: center;
+    grid-row: 1;
+}
+
+#skills_title_lang{
+    font-size: 3em;
+    font-size:4vw;
+    grid-row:2;
+    margin-bottom: 2vw;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#skills_title_libs{
+    font-size: 3em;
+    font-size:4vw;
+    grid-row:4;
+    margin-bottom: 2vw;
+    text-align: center;
+    text-decoration: underline; 
+}
+
+#skills_languages{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+#skills_python{
+    width:50%;
+    grid-column: 1;
+}
+
+#skills_cpp{
+    width: 40%;
+    grid-column: 2;
+
+}
+
+#skills_java{
+    width: 50%;
+    grid-column: 3;
+
+}
+
+
+
+
+
+/*Mobile CSS*/
+@media screen and (max-width: 480px){
+
 }
