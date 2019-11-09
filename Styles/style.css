@@ -65,6 +65,7 @@ body,html{
 
 a{
     text-decoration: none;
+    color: #000000;
 }
 
 a:visited{
@@ -79,6 +80,7 @@ a:hover{
 .about{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    position: static;
 }
 
 #about_title{
@@ -105,4 +107,69 @@ a:hover{
     width: 70%;
     margin-left: 10vw;
     margin-top: 6vw;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns: 1.75fr 1.25fr;
+    grid-template-rows: auto 500px;
+    max-height: 50%;
+}
+
+#projects_title{
+    font-size: 3em;
+    font-size:7vw;
+    grid-column: 2/3;
+    margin-bottom: 2vw;
+    margin-top: 4vw;
+    margin-left: 0;
+}
+
+#projects_info{
+    margin-right: 4vw;
+    margin-left: 0vw;
+    margin-bottom: 10vw;
+    grid-column:2/3;
+    font-size: 2vw;
+    max-height: 50%;
+}
+
+.projects_images{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    max-height: 80%;
+    row-gap: 0.5vw;
+    
+}
+
+#project_fig1,#project_fig2,#project_fig3{
+    margin-left: 6vw;
+    overflow: hidden;
+}
+
+#project_img1,#project_img2,#project_img3{
+    width: 85%;
+    overflow:hidden;
+    position: relative;
+}
+
+#project_img1{
+    grid-row: 1/2;
+
+}
+
+
+#project_img2{
+    grid-row: 2/3;
+
+}
+
+
+#project_img3{
+    grid-row: 3/4;
+
+
 }
